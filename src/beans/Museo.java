@@ -62,6 +62,13 @@ private ArrayList<Opera>deposito;
     }
     public void stampaSala(Opera[] sala){
 
+      /*  for(int i =0;i < sala.length;i++) {
+            System.out.println("sono in stampaSala");
+            if(sala[i] != null){
+                System.out.println("stampo ogni singola posizione della sala occupata da un opera : "+ sala[i].toString());
+
+            }
+        }*/
         for(int i =0;i < sala.length;i++) {
             System.out.println("sono in stampaSala");
             if(sala[i] != null){
@@ -71,12 +78,17 @@ private ArrayList<Opera>deposito;
         }
     }
 
+
     public void stampaDeposito(){
-        int i=0;
+        //int i=0;
         System.out.println("I nomi delle opere presenti nel DEPOSITO sono:");
-        for(i =0;i<deposito.size();i++){
+        /*for(i =0;i<deposito.size();i++){
             System.out.println("Posizione");
             deposito.get(i).toString();
+        }*/
+        for (Opera op:deposito) {
+            System.out.println("Posizione");
+            op.toString();
         }
 
     }
